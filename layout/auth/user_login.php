@@ -22,7 +22,7 @@ function user_exist($pass1, $mail) {
             $_SESSION['user_id'] = $id_util; // Stocker l'ID utilisateur dans la session
             $_SESSION['user_c'] = $mail[0]; // Stocker l'email dans la session
              $_SESSION['login'] = "oui";
-             if($rol=='2')   $_SESSION['isAdmin'] = "oui";
+             if($rol!='1')   $_SESSION['isAdmin'] = "oui";
            
             echo "connected !";
         } else {
